@@ -1,0 +1,36 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+{{ super() }}
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+{% endblock %}
+
+
+{% block title %}Add new item{% endblock %}
+
+{% block content %}
+{% include "header.html" %}
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto content">
+              <div style="color: red;">
+                {% with messages = get_flashed_messages() %}
+                {{ messages[0] }}
+                {% endwith %}
+              </div>
+                {% if error: %}
+                <p class="error"><strong>Error:</strong> {{error}}</p>
+                {% endif %}
+                <div class="col-md-5">
+                    {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+
+{% include "footer.html" %}
+{% endblock %}

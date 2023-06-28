@@ -1,0 +1,28 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{ super() }}
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+{% endblock %}
+
+
+{% block title %}Hot Wheels Depot{% endblock %}
+
+{% block content %}
+{% include "header.html" %}
+
+<body>
+  <div id="item_par_div">
+          <div id="item_child_div_1">
+            <img src="/static/images/large_size/{{ item.img_url_1 }}">
+          </div>
+          <div id="item_child_div_2">
+            <img src="/static/images/large_size/{{ item.img_url_2 }}">
+          </div>
+          <button class="btn-primary btn-lg" id="item_button">Add to cart</button>
+  </div>
+
+</body>
+
+{% include "footer.html" %}
+{% endblock %}
