@@ -60,8 +60,8 @@ class Cart(db.Model):
     price = db.Column(db.Float, nullable=False)
 
 
-# with app.app_context():
-#     db.create_all()
+with app.app_context():
+    db.create_all()
 
 # all Flask routes below
 def admin_only(f):
