@@ -9,3 +9,4 @@ Pillow~=9.5.0
 WTForms~=3.0.1
 
 Flask-SQLAlchemy==2.4.4
+Flask-Bootstrap==3.3.7.1
