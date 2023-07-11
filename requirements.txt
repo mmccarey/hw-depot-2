@@ -23,3 +23,6 @@ Werkzeug==1.0.1
 WTForms==2.3.3
 
 
+email-validator==2.0.0
+
+
