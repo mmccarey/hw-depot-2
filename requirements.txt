@@ -25,6 +25,6 @@ WTForms==2.3.3
 
 email-validator==2.0.0
 pillow==9.5.0
-python-dotenv==1.00
+python-dotenv==1.0.0
 
 
