@@ -1,6 +1,6 @@
 body {
-background-color: #333;
-color: white;
+    background-color: #333;
+    color: #fff;
 }
 
 button {
@@ -12,16 +12,39 @@ ul {
 }
 
 
-.jumbotron {
-    position: absolute;
-    z-index: 1;
-    height: 250px;
-    width: 950px;
+#top_container{
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
-.jumbotron h1 {
-    color: #000000;
+.jumbotron {
+    z-index: 1;
+    height: 250px;
+    display: flex;
+    width: 100%;
 }
+
+#main_img {
+    position: absolute;
+    z-index: 2;
+    float: right;
+    top: 33%;
+    left: 30%;
+    min-width: 50px;
+    display: flex;
+}
+
+#middle_container {
+    margin-top: 300px;
+    margin-left: 30%;
+    width: 700px;
+    height: 150px;
+    border-radius: 25px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 75px;
+    font-weight: 800;
+}
+
 
 .btn-primary {
   background-color: #E31C79;
@@ -31,33 +54,6 @@ ul {
 #add_btn {
     margin-left: 800px;
 }
-
-#top_container {
-    position: relative;
-    margin-top: 0px;
-}
-
-#main_img {
-    position: absolute;
-    z-index: 2;
-    float: right;
-    top: 200px;
-    left: 350px;
-}
-
-#middle_container {
-    margin-top: 500px;
-    margin-left: 325px;
-    width: 700px;
-    height: 150px;
-    border-radius: 25px;
-    /* background-color: rgba(227,28,121,.75); */
-    /* background-color: rgba(127,127,127,.75); */
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 75px;
-    font-weight: 800;
-}
-
 
 #store_par_div {
     position: relative;
@@ -225,10 +221,11 @@ position: absolute;
     }
 
 
+
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
-  background-color: white;
+  background-color: transparent;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding-top: 0px;
   padding-left: 65px;
@@ -237,7 +234,7 @@ position: absolute;
 #mainNav .navbar-brand {
   font-size: 26px;
   font-weight: 800;
-  color: #343a40;
+  color: white;
 }
 
 #mainNav .navbar-toggler {
@@ -245,7 +242,7 @@ position: absolute;
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: rgba(255, 255, 255, 0.55);
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -269,7 +266,7 @@ position: absolute;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 24px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -330,14 +327,6 @@ footer {
     padding: 35px 0 26px;
 }
 
-#store_footer {
-    position: relative;
-    bottom: 0;
-    margin-left: 5px;
-    padding: 45px 5px 5px 0px;;
-}
-
-
 footer .list-inline {
   margin: 0;
   padding: 0;
@@ -353,4 +342,10 @@ footer .copyright {
   font-size: 14px;
   margin-bottom: 0;
   text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#footer_row {
+    border-top: 1px solid white;
+    padding-top: 40px;
 }

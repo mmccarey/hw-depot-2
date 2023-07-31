@@ -1,14 +1,4 @@
-{% extends 'bootstrap/base.html' %}
 
-{% block styles %}
-{{ super() }}
-        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
-{% endblock %}
-
-
-{% block title %}Hot Wheels Depot{% endblock %}
-
-{% block content %}
 {% include "header.html" %}
 
 <body>
@@ -51,4 +41,3 @@
 </body>
 
 {% include "footer.html" %}
-{% endblock %}

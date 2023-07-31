@@ -258,18 +258,3 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
-
-# Flask~=2.2.3
-
-# Werkzeug~=2.2.3
-
-# Flask-SQLAlchemy 2.4.4
-
-
-# stripe~=5.4.0
-# Flask~=2.1.3
-# Werkzeug~=2.0.0
-# SQLAlchemy~=2.0.11
-# Pillow~=9.5.0
-# python-dotenv~=1.0.0
-# WTForms~=3.0.1
