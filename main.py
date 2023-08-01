@@ -156,7 +156,6 @@ def add_item():
 @app.route("/store", methods=["GET", "POST"])
 def store():
     items = Item.query.all()
-    print(items)
     return render_template("store.html", items=items)
 
 
